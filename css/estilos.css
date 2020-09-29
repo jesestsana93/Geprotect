@@ -312,6 +312,13 @@ X. Show de las Medias Queries
       background: transparent;
       font-size: .9rem;
       padding: 0; }
+    #inicio #menu-principal ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     #inicio #servicios .borde:last-child {
       border-right: none; } }
 /* --------------Vista Xl ------------- */

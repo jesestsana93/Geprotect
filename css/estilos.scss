@@ -371,6 +371,11 @@ X. Show de las Medias Queries
             padding: 0;
         }
 
+        #menu-principal ul li {
+            display: flex;
+            align-items: center;
+        }
+
         #servicios {
             .borde:last-child {
                 border-right: none;
