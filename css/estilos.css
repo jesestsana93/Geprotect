@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html {
+  font-size: 14px; }
+
+body {
+  color: white;
+  font-family: 'Open Sans', sans-serif; }
+
+/*------------------------------
+2. ESTILOS GENERALES
+--------------------------------*/
+.bg-primary {
+  background-color: #446EF2 !important; }
+
+section {
+  margin: 0; }
+
+.texto-encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/*------------------------------
+3. INICIO
+--------------------------------*/
+#inicio {
+  /*----Barra de navegacion----*/
+  /*Estilos para los enlaces del menu*/
+  /*Boton del menu */
+  /*Banner de la pagina*/
+  background-image: url(../images/backgroundsMobile/home-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #inicio .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030; }
+  #inicio .menu-pleca {
+    background-image: url(../images/svg/menu-pleca-mobile.svg);
+    background-size: cover;
+    /*Estilos al logotipo del sitio*/ }
+    #inicio .menu-pleca .logo {
+      width: 14rem;
+      height: auto; }
+  #inicio .navbar-dark .navbar-nav .nav-link {
+    background-image: url(../images/backgroundsMobile/menu-background.jpg);
+    background-size: cover;
+    text-transform: uppercase;
+    margin-right: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #446EF2;
+    padding: .8rem; }
+    #inicio .navbar-dark .navbar-nav .nav-link img {
+      width: 8.8rem; }
+    #inicio .navbar-dark .navbar-nav .nav-link.active {
+      color: #00FF79; }
+  #inicio .boton-menu:before {
+    content: "\f142";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #00FF79;
+    font-size: 3rem; }
+    #inicio .boton-menu:before:focus, #inicio .boton-menu:before:active {
+      outline: none; }
+  #inicio .icono-cerrar:before {
+    content: "\f00d";
+    position: relative;
+    left: .2rem;
+    font-size: 3rem; }
+  #inicio .flecha-bajar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #inicio .flecha-bajar a {
+      width: 1.8rem;
+      padding-bottom: 1rem;
+      -webkit-animation: flecha-animada 2s ease-in-out infinite;
+              animation: flecha-animada 2s ease-in-out infinite; }
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+@keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+/*------------------------------
+4. NOSOTROS
+--------------------------------*/
+#nosotros {
+  background-image: url(../images/backgrounds/geprotec-nosotros.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  #nosotros span {
+    color: #00FF79;
+    font-weight: 700; }
+
+/*------------------------------
+5. SERVICIOS
+--------------------------------*/
+#servicios {
+  background-image: url(../images/backgrounds/geprotec-servicios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  text-align: center; }
+  #servicios img {
+    width: 7.5rem;
+    margin: .9rem 0; }
+  #servicios h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .9rem; }
+  #servicios p,
+  #servicios ul {
+    text-align: left; }
+
+/*------------------------------
+6. CONTACTO
+--------------------------------*/
+#contacto {
+  background-image: url(../images/backgroundsMobile/contacto-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  /*Estilos para el formulario*/
+  /*Estilos para el botón*/ }
+  #contacto .col-12 .col-md-6:focus {
+    outline: none; }
+  #contacto .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #contacto .form-control {
+    background-color: transparent;
+    border: 1px solid #446EF2;
+    border-radius: 1.5rem;
+    color: white; }
+  #contacto ::-webkit-input-placeholder {
+    font-family: "Rounded Mplus 1c Light" !important;
+    color: rgba(255, 255, 255, 0.9);
+    padding: .3rem .2rem;
+    font-size: 1rem; }
+  #contacto :-ms-input-placeholder {
+    font-family: "Rounded Mplus 1c Light" !important;
+    color: rgba(255, 255, 255, 0.9);
+    padding: .3rem .2rem;
+    font-size: 1rem; }
+  #contacto ::-ms-input-placeholder {
+    font-family: "Rounded Mplus 1c Light" !important;
+    color: rgba(255, 255, 255, 0.9);
+    padding: .3rem .2rem;
+    font-size: 1rem; }
+  #contacto ::placeholder {
+    font-family: "Rounded Mplus 1c Light" !important;
+    color: rgba(255, 255, 255, 0.9);
+    padding: .3rem .2rem;
+    font-size: 1rem; }
+  #contacto input[type=text],
+  #contacto input[type=email] {
+    color: white; }
+  #contacto .btn {
+    font-weight: bold;
+    padding: .4rem 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: .8rem; }
+  #contacto .btn-primary {
+    background-color: #00FF79;
+    color: #0a2b93;
+    border-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    /*Efecto de la caja desplazada en el boton*/ }
+    #contacto .btn-primary:active, #contacto .btn-primary:hover {
+      background-color: white;
+      color: #000104; }
+    #contacto .btn-primary:focus {
+      border-color: transparent;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    #contacto .btn-primary:hover::before {
+      width: 130%;
+      left: -15%; }
+    #contacto .btn-primary:before {
+      content: '';
+      width: 0px;
+      height: 100%;
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      z-index: -1;
+      -webkit-transform: skew(-45deg, 0);
+              transform: skew(-45deg, 0);
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+  #contacto .footer {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: .7rem; }
+    #contacto .footer img {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: .3rem; }
+    #contacto .footer span {
+      font-weight: bold; }
+
+/* =============================================
+X. Show de las Medias Queries
+============================================= */
+/* --------------Vista sm ------------- */
+@media (min-width: 576px) {
+  #inicio {
+    /*Banner de la pagina*/
+    background-image: url(../images/backgrounds/geprotec-inicio.jpg); } }
+/* --------------Vista Md ------------- */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  #inicio {
+    /*Fondo de imagen para el banner*/ }
+    #inicio .menu-pleca {
+      background-image: url(../images/svg/menu-pleca-desktop.svg); }
+    #inicio .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.3rem; }
+    #inicio:before {
+      content: '';
+      background-image: url(../images/backgrounds/wave-home.png);
+      background-position: top center;
+      position: absolute;
+      top: 40%;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+
+  #nosotros:before {
+    content: '';
+    background-image: url(../images/backgrounds/wave-home.png);
+    background-position: bottom center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -12.5%;
+    left: 0; }
+
+  #contacto {
+    background-image: url(../images/backgrounds/geprotec-contacto.jpg); }
+
+  #servicios .borde {
+    border-right: 1px solid #446EF2; } }
+/* --------------Vista Lg ------------- */
+@media (min-width: 992px) {
+  #inicio {
+    /*Estilos para los enlaces del menu*/ }
+    #inicio .navbar-dark .navbar-nav .nav-link {
+      background: transparent;
+      font-size: .9rem;
+      padding: 0; }
+    #inicio #servicios .borde:last-child {
+      border-right: none; } }
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=estilos.css.map */
