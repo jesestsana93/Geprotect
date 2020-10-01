@@ -2,16 +2,25 @@
 /*------------------------------
 1. TIPOGRAFIA DEL SITIO
 --------------------------------*/
+@font-face {
+  font-family: "Rounded Mplus 1c Medium";
+  src: url("../fonts/RoundedMplus1c-Medium.ttf"); }
+@font-face {
+  font-family: "Rounded Mplus 1c ExtraBold";
+  src: url("../fonts/RoundedMplus1c-ExtraBold.ttf"); }
+@font-face {
+  font-family: "Rounded Mplus 1c Light";
+  src: url("../fonts/RoundedMplus1c-Light.ttf"); }
 html {
   font-size: 14px; }
-
-body {
-  color: white;
-  font-family: 'Open Sans', sans-serif; }
 
 /*------------------------------
 2. ESTILOS GENERALES
 --------------------------------*/
+/*PALETA DE COLORES USADA*/
+body {
+  color: white; }
+
 .bg-primary {
   background-color: #446EF2 !important; }
 
@@ -41,15 +50,18 @@ section {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   position: relative;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  font-family: "Rounded Mplus 1c Medium";
+  /*Flecha para dar scroll */
+  /*Animacion de la fecha*/ }
   #inicio .navbar-fixed-top {
     position: fixed;
     right: 0;
@@ -68,8 +80,7 @@ section {
     text-transform: uppercase;
     margin-right: 1.2rem;
     text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-family: "Rounded Mplus 1c ExtraBold";
     color: #446EF2;
     padding: .8rem; }
     #inicio .navbar-dark .navbar-nav .nav-link img {
@@ -130,17 +141,17 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  font-family: "Rounded Mplus 1c Light"; }
   #nosotros span {
     color: #00FF79;
-    font-weight: 700; }
+    font-family: "Rounded Mplus 1c ExtraBold"; }
 
 /*------------------------------
 5. SERVICIOS
@@ -156,11 +167,12 @@ section {
     margin: .9rem 0; }
   #servicios h2 {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-family: "Rounded Mplus 1c ExtraBold";
     margin-bottom: .9rem; }
   #servicios p,
   #servicios ul {
-    text-align: left; }
+    text-align: left;
+    font-family: "Rounded Mplus 1c Light"; }
 
 /*------------------------------
 6. CONTACTO
@@ -173,6 +185,10 @@ section {
   height: auto;
   /*Estilos para el formulario*/
   /*Estilos para el botón*/ }
+  #contacto h3 {
+    font-family: "Rounded Mplus 1c ExtraBold";
+    text-transform: uppercase;
+    text-align: center; }
   #contacto .col-12 .col-md-6:focus {
     outline: none; }
   #contacto .form-group {
@@ -209,13 +225,15 @@ section {
     font-size: 1rem; }
   #contacto input[type=text],
   #contacto input[type=email] {
-    color: white; }
+    color: white;
+    font-family: "Rounded Mplus 1c Light"; }
   #contacto .btn {
     font-weight: bold;
     padding: .4rem 2rem;
     border-radius: 1rem;
     text-transform: uppercase;
-    font-size: .8rem; }
+    font-size: .8rem;
+    font-family: "Rounded Mplus 1c Medium"; }
   #contacto .btn-primary {
     background-color: #00FF79;
     color: #0a2b93;
@@ -252,13 +270,14 @@ section {
   #contacto .footer {
     margin-top: 4rem;
     text-align: center;
-    font-size: .7rem; }
+    font-size: .7rem;
+    font-family: "Rounded Mplus 1c Light"; }
     #contacto .footer img {
       width: 1.2rem;
       height: 1.2rem;
       margin-right: .3rem; }
     #contacto .footer span {
-      font-weight: bold; }
+      font-family: "Rounded Mplus 1c ExtraBold"; }
 
 /* =============================================
 X. Show de las Medias Queries
@@ -282,22 +301,13 @@ X. Show de las Medias Queries
     #inicio:before {
       content: '';
       background-image: url(../images/backgrounds/wave-home.png);
-      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
       position: absolute;
-      top: 40%;
+      top: 45%;
       right: 0;
       bottom: 0;
       left: 0; }
-
-  #nosotros:before {
-    content: '';
-    background-image: url(../images/backgrounds/wave-home.png);
-    background-position: bottom center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -12.5%;
-    left: 0; }
 
   #contacto {
     background-image: url(../images/backgrounds/geprotec-contacto.jpg); }
@@ -310,8 +320,8 @@ X. Show de las Medias Queries
     /*Estilos para los enlaces del menu*/ }
     #inicio .navbar-dark .navbar-nav .nav-link {
       background: transparent;
-      font-size: .9rem;
-      padding: 0; }
+      font-size: .8rem;
+      padding: 0 .8rem; }
     #inicio #menu-principal ul li {
       display: -webkit-box;
       display: -ms-flexbox;
