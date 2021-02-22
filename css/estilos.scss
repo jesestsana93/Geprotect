@@ -80,6 +80,10 @@ section {
         color: $principal;
         padding: .8rem;
 
+        &.no-disponible {
+            pointer-events: none;
+        }
+
         img {
             width: 8.8rem;
         }

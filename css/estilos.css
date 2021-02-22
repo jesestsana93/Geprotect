@@ -11,6 +11,7 @@
 @font-face {
   font-family: "Rounded Mplus 1c Light";
   src: url("../fonts/RoundedMplus1c-Light.ttf"); }
+/* line 18, estilos.scss */
 html {
   font-size: 14px; }
 
@@ -18,15 +19,19 @@ html {
 2. ESTILOS GENERALES
 --------------------------------*/
 /*PALETA DE COLORES USADA*/
+/* line 30, estilos.scss */
 body {
   color: white; }
 
+/* line 34, estilos.scss */
 .bg-primary {
   background-color: #446EF2 !important; }
 
+/* line 38, estilos.scss */
 section {
   margin: 0; }
 
+/* line 42, estilos.scss */
 .texto-encabezado {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +46,7 @@ section {
 /*------------------------------
 3. INICIO
 --------------------------------*/
+/* line 51, estilos.scss */
 #inicio {
   /*----Barra de navegacion----*/
   /*Estilos para los enlaces del menu*/
@@ -62,18 +68,22 @@ section {
   font-family: "Rounded Mplus 1c Medium";
   /*Flecha para dar scroll */
   /*Animacion de la fecha*/ }
+  /* line 54, estilos.scss */
   #inicio .navbar-fixed-top {
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1030; }
+  /* line 61, estilos.scss */
   #inicio .menu-pleca {
     background-image: url(../images/svg/menu-pleca-mobile.svg);
     background-size: cover;
     /*Estilos al logotipo del sitio*/ }
+    /* line 66, estilos.scss */
     #inicio .menu-pleca .logo {
       width: 14rem;
       height: auto; }
+  /* line 73, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     background-image: url(../images/backgroundsMobile/menu-background.jpg);
     background-size: cover;
@@ -83,23 +93,32 @@ section {
     font-family: "Rounded Mplus 1c ExtraBold";
     color: #446EF2;
     padding: .8rem; }
+    /* line 83, estilos.scss */
+    #inicio .navbar-dark .navbar-nav .nav-link.no-disponible {
+      pointer-events: none; }
+    /* line 87, estilos.scss */
     #inicio .navbar-dark .navbar-nav .nav-link img {
       width: 8.8rem; }
+    /* line 91, estilos.scss */
     #inicio .navbar-dark .navbar-nav .nav-link.active {
       color: #00FF79; }
+  /* line 97, estilos.scss */
   #inicio .boton-menu:before {
     content: "\f142";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #00FF79;
     font-size: 3rem; }
+    /* line 104, estilos.scss */
     #inicio .boton-menu:before:focus, #inicio .boton-menu:before:active {
       outline: none; }
+  /* line 111, estilos.scss */
   #inicio .icono-cerrar:before {
     content: "\f00d";
     position: relative;
     left: .2rem;
     font-size: 3rem; }
+  /* line 130, estilos.scss */
   #inicio .flecha-bajar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -107,6 +126,7 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    /* line 134, estilos.scss */
     #inicio .flecha-bajar a {
       width: 1.8rem;
       padding-bottom: 1rem;
@@ -135,6 +155,7 @@ section {
 /*------------------------------
 4. NOSOTROS
 --------------------------------*/
+/* line 161, estilos.scss */
 #nosotros {
   background-image: url(../images/backgrounds/geprotec-nosotros.jpg);
   background-position: center center;
@@ -149,6 +170,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Rounded Mplus 1c Light"; }
+  /* line 171, estilos.scss */
   #nosotros span {
     color: #00FF79;
     font-family: "Rounded Mplus 1c ExtraBold"; }
@@ -156,19 +178,23 @@ section {
 /*------------------------------
 5. SERVICIOS
 --------------------------------*/
+/* line 181, estilos.scss */
 #servicios {
   background-image: url(../images/backgrounds/geprotec-servicios.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
   text-align: center; }
+  /* line 188, estilos.scss */
   #servicios img {
     width: 7.5rem;
     margin: .9rem 0; }
+  /* line 193, estilos.scss */
   #servicios h2 {
     font-size: 1.2rem;
     font-family: "Rounded Mplus 1c ExtraBold";
     margin-bottom: .9rem; }
+  /* line 199, estilos.scss */
   #servicios p,
   #servicios ul {
     text-align: left;
@@ -177,6 +203,7 @@ section {
 /*------------------------------
 6. CONTACTO
 --------------------------------*/
+/* line 209, estilos.scss */
 #contacto {
   background-image: url(../images/backgroundsMobile/contacto-background.jpg);
   background-position: center center;
@@ -185,12 +212,15 @@ section {
   height: auto;
   /*Estilos para el formulario*/
   /*Estilos para el botón*/ }
+  /* line 216, estilos.scss */
   #contacto h3 {
     font-family: "Rounded Mplus 1c ExtraBold";
     text-transform: uppercase;
     text-align: center; }
+  /* line 224, estilos.scss */
   #contacto .col-12 .col-md-6:focus {
     outline: none; }
+  /* line 229, estilos.scss */
   #contacto .form-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -198,11 +228,13 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  /* line 234, estilos.scss */
   #contacto .form-control {
     background-color: transparent;
     border: 1px solid #446EF2;
     border-radius: 1.5rem;
     color: white; }
+  /* line 241, estilos.scss */
   #contacto ::-webkit-input-placeholder {
     font-family: "Rounded Mplus 1c Light" !important;
     color: rgba(255, 255, 255, 0.9);
@@ -223,10 +255,12 @@ section {
     color: rgba(255, 255, 255, 0.9);
     padding: .3rem .2rem;
     font-size: 1rem; }
+  /* line 248, estilos.scss */
   #contacto input[type=text],
   #contacto input[type=email] {
     color: white;
     font-family: "Rounded Mplus 1c Light"; }
+  /* line 255, estilos.scss */
   #contacto .btn {
     font-weight: bold;
     padding: .4rem 2rem;
@@ -234,6 +268,7 @@ section {
     text-transform: uppercase;
     font-size: .8rem;
     font-family: "Rounded Mplus 1c Medium"; }
+  /* line 264, estilos.scss */
   #contacto .btn-primary {
     background-color: #00FF79;
     color: #0a2b93;
@@ -244,16 +279,20 @@ section {
     -webkit-transition: all .6s ease;
     transition: all .6s ease;
     /*Efecto de la caja desplazada en el boton*/ }
+    /* line 273, estilos.scss */
     #contacto .btn-primary:active, #contacto .btn-primary:hover {
       background-color: white;
       color: #000104; }
+    /* line 279, estilos.scss */
     #contacto .btn-primary:focus {
       border-color: transparent;
       -webkit-box-shadow: none;
               box-shadow: none; }
+    /* line 285, estilos.scss */
     #contacto .btn-primary:hover::before {
       width: 130%;
       left: -15%; }
+    /* line 292, estilos.scss */
     #contacto .btn-primary:before {
       content: '';
       width: 0px;
@@ -267,15 +306,18 @@ section {
               transform: skew(-45deg, 0);
       -webkit-transition: all .4s ease;
       transition: all .4s ease; }
+  /* line 307, estilos.scss */
   #contacto .footer {
     margin-top: 4rem;
     text-align: center;
     font-size: .7rem;
     font-family: "Rounded Mplus 1c Light"; }
+    /* line 313, estilos.scss */
     #contacto .footer img {
       width: 1.2rem;
       height: 1.2rem;
       margin-right: .3rem; }
+    /* line 319, estilos.scss */
     #contacto .footer span {
       font-family: "Rounded Mplus 1c ExtraBold"; }
 
@@ -284,20 +326,26 @@ X. Show de las Medias Queries
 ============================================= */
 /* --------------Vista sm ------------- */
 @media (min-width: 576px) {
+  /* line 330, estilos.scss */
   #inicio {
     /*Banner de la pagina*/
     background-image: url(../images/backgrounds/geprotec-inicio.jpg); } }
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
+  /* line 338, estilos.scss */
   html {
     font-size: 16px; }
 
+  /* line 342, estilos.scss */
   #inicio {
     /*Fondo de imagen para el banner*/ }
+    /* line 344, estilos.scss */
     #inicio .menu-pleca {
       background-image: url(../images/svg/menu-pleca-desktop.svg); }
+    /* line 348, estilos.scss */
     #inicio .navbar-dark .navbar-nav .nav-link {
       font-size: 1.3rem; }
+    /* line 353, estilos.scss */
     #inicio:before {
       content: '';
       background-image: url(../images/backgrounds/wave-home.png);
@@ -309,19 +357,24 @@ X. Show de las Medias Queries
       bottom: 0;
       left: 0; }
 
+  /* line 366, estilos.scss */
   #contacto {
     background-image: url(../images/backgrounds/geprotec-contacto.jpg); }
 
+  /* line 373, estilos.scss */
   #servicios .borde {
     border-right: 1px solid #446EF2; } }
 /* --------------Vista Lg ------------- */
 @media (min-width: 992px) {
+  /* line 381, estilos.scss */
   #inicio {
     /*Estilos para los enlaces del menu*/ }
+    /* line 384, estilos.scss */
     #inicio .navbar-dark .navbar-nav .nav-link {
       background: transparent;
       font-size: .8rem;
       padding: 0 .8rem; }
+    /* line 390, estilos.scss */
     #inicio #menu-principal ul li {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -329,11 +382,11 @@ X. Show de las Medias Queries
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+    /* line 396, estilos.scss */
     #inicio #servicios .borde:last-child {
       border-right: none; } }
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
+  /* line 405, estilos.scss */
   html {
     font-size: 18px; } }
-
-/*# sourceMappingURL=estilos.css.map */
